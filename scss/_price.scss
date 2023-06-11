@@ -1,0 +1,242 @@
+//wrap > header
+.banner {
+    .belief {
+        max-width: 50%;
+        font-size: 48px;
+        line-height: 1.2;
+        padding-top: 40px;
+        margin: 0 0 238px auto;
+    }
+
+    .price-grass-animate {
+        justify-content: start;
+    }
+
+    @media (max-width:767px) {
+        .belief {
+            max-width: 74%;
+            font-size: 28px;
+            padding-top: 24px;
+            margin: 0 0 258px auto;
+        }
+        
+        .price-grass-animate {
+            justify-content: center;
+        }
+    }
+}
+
+//container > pricing
+.pricing {
+
+    &-title {
+        white-space: nowrap;
+        padding-right: 254px;
+        margin-bottom: 80px;
+    }
+
+    &-card-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &-card {
+        width: 100%;
+        max-width: 48.2%;
+        padding: 20px 32px;
+        border: 1px solid #525252;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            font-weight: 400;
+            list-style: disc;
+            margin: 0 0 116px 32px;
+            flex: 1 0 0;
+        }
+
+        &-cost {
+            border-top: 1px solid #525252;
+            margin: 0 -32px 0;
+            padding: 20px 32px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 20px;
+                font-weight: 900;
+                line-height: 1.2;
+
+                span {
+                    font-weight: 400;
+                    color: #919191;
+                }
+            }
+
+            &-btn {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.5;
+                background: #020202;
+                color: #fff;
+                padding: 0;
+                // margin: 0;
+                border: none;
+
+                .material-icons {
+                    font-size: 16px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    @media (max-width:767px) {
+        &-title{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        &-card-group {
+            gap: 12px;
+        }
+        &-card{
+            max-width: 100%;
+            min-height: 240px;
+            ul {
+                margin: 0 0 38px 24px;
+            }
+            &-cost {
+                margin: 0 -20px 0;
+                padding: 20px 20px 0;
+    
+                p {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+//container > terms-of-rule
+.terms-of-rule {
+    display: flex;
+    justify-content: space-between;
+
+    .rule {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        line-height: 1.2;
+
+        &-list {
+            padding: 0 0 40px;
+            border-bottom: 1px solid #525252;
+        }
+
+        &-list-title {
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .terms-of-rule {
+        flex-direction: column;
+
+        &-title {
+            margin-bottom: 48px;
+            @media (max-width:767px) {
+                font-size: 20px;
+            }
+        }
+
+        .rule {
+            gap: 24px;
+
+            &-list-title {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// container > QnA-section 
+.QnA-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.QnA {
+    .material-icons {
+      vertical-align: top;
+      margin-right: 20px;
+    }
+    &-list {
+      width: 856px;
+      padding: 20px 40px;
+      border: 1px solid #444;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:hover {
+        border: 2px solid #fff;
+      }
+      &-link {
+        display: flex;
+      }
+      &-active {
+        border: 2px solid #fff;
+        border-radius: 16px;
+      }
+    }
+    &-detail-q {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    &-detail-a {
+        margin-top: 20px;
+        font-weight: 400;
+    }
+  }
+
+@media (max-width:1200px) {
+    .QnA-section {
+        flex-direction: column;
+        &-title{
+            margin-bottom: 24px;
+        }
+    }
+    
+    .QnA{
+        &-list{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .QnA-section-title{
+        font-size: 20px;
+    }
+}

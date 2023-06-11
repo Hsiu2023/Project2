@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// 滾動條
+*::-webkit-scrollbar {
+    // display: none;
+    height: 4px;
+    border-radius: 10px;
+
+    &-track {
+        background: #fff;
+    }
+
+    &-thumb {
+        background: #f2f2f2;
+    }
+}
+
+body {
+    background: #020202;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.header,
+.banner,
+.container,
+.footer {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+    background: #020202;
+    color: #fff;
+    padding: 20px 40px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+
+    &:hover {
+        background: #fff;
+        color: #020202;
+    }
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+h1 {
+    line-height: 0;
+}
+
+h2,
+h3,
+h4,
+.font-design-heavy {
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 80px;
+
+    @media (max-width:767px) {
+        font-size: 48px;
+    }
+}
+
+h3,
+.fz-32 {
+    font-size: 32px;
+}
+
+h4,
+.fz-20 {
+    font-size: 20px;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+a,
+button,
+.btn {
+    cursor: pointer;
+}
+
+.logo {
+    height: 40px;
+    width: 250px;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true);
+    background-size: cover;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.mb {
+    margin-bottom: 160px;
+
+    @media (max-width:767px) {
+        margin-bottom: 120px;
+    }
+}
+
+.d-none {
+    display: none;
+}
